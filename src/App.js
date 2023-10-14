@@ -1,6 +1,13 @@
+import Root from './index';
+import harvardArt from './data/harvardArt';
+import GalleryNavigation from './components/GalleryNavigation';
+
+
 function App() {
+  const galleries = harvardArt;
+  // console.log(galleries);
   return (
-    <h1>Hello from App</h1>
+    <GalleryNavigation harvardArt={harvardArt} />
   );
 }
 
